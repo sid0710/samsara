@@ -12,10 +12,15 @@ public:
     void mousePressed(int x, int y, int button);
     
     ofVideoGrabber cam;
-    ofxCv::ContourFinder contourFinder;
-    ofColor targetColor;
+    ofxCv::ContourFinder contourFinder1;
+    ofColor targetColor1;
+    ofColor targetColor2;
+    ofxCv::ContourFinder contourFinder2;
+    //ofColor targetColor3;
+    //ofxCv::ContourFinder contourFinder3;
     
     ofxPanel gui;
-    ofParameter<float> threshold;
+    ofParameter<float> threshold1;
+    ofParameter<float> threshold2;
     ofParameter<bool> trackHs;
 };
